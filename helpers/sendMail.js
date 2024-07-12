@@ -11,10 +11,11 @@ const transporter = nodemailer.createTransport({
 
 // async..await is not allowed in global scope, must use a wrapper
 async function sendMail(to, subject, text, html) {
+  const recipients = Array.isArray(to) ? to.join(',') : to;
   // send mail with defined transport object
   const info = await transporter.sendMail({
-    from: 'subhammurthy@gmail.com', // sender address
-    to,
+    from: 'debidatta.learnforcause@gmail.com', // sender address
+    to:recipients,
     subject,
     text,
     html
