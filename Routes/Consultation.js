@@ -19,7 +19,11 @@ router.post("/consult", async (req, res) => {
       hear: req.body.hear,
       comment: req.body.comment,
     });
-    sendMail(req.body.email, "Consultation Response", "", htmlMail(req.body.fname, req.body.lname, req.body.phone, req.body.email, req.body.dob, req.body.time, req.body.mode, req.body.reason, req.body.question, req.body.hear, req.body.comment))
+    const recipients = [
+      req.body.email,
+      'debidatta.learnforcause@gmail.com',
+    ];
+    sendMail(recipients, "Consultation Response", "", htmlMail(req.body.fname, req.body.lname, req.body.phone, req.body.email, req.body.dob, req.body.time, req.body.mode, req.body.reason, req.body.question, req.body.hear, req.body.comment))
     res.json({ success: true });
   } catch (error) {
     console.log("errorrrr", error);
