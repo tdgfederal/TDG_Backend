@@ -12,15 +12,17 @@ router.post("/contact", async (req, res) => {
       email: req.body.email,
       comment: req.body.comment,
     });
-    const recipients = [
-      req.body.email,
-      'debidatta.learnforcause@gmail.com',
-    ];
+    const recipients = [req.body.email, "debidatta.learnforcause@gmail.com"];
     sendMail(
       recipients,
-      "Contact Response",
+      req.body.fname + " " + req.body.lname + " - " + "Contact Response",
       "",
-      ContactHtml(req.body.fname, req.body.lname, req.body.email, req.body.comment)
+      ContactHtml(
+        req.body.fname,
+        req.body.lname,
+        req.body.email,
+        req.body.comment
+      )
     );
     res.json({ success: true });
   } catch (error) {
