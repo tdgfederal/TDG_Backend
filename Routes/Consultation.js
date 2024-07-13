@@ -19,7 +19,7 @@ router.post("/consult", async (req, res) => {
       hear: req.body.hear,
       comment: req.body.comment,
     });
-    const recipients = [req.body.email, "debidatta.learnforcause@gmail.com"];
+    const recipients = [req.body.email, "debidatta.learnforcause@gmail.com", "ddiallo@itecintegrator.com"];
     sendMail(
       recipients,
       req.body.fname + " " + req.body.lname + " - " + "Consultation Response",

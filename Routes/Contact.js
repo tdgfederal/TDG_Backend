@@ -12,7 +12,7 @@ router.post("/contact", async (req, res) => {
       email: req.body.email,
       comment: req.body.comment,
     });
-    const recipients = [req.body.email, "debidatta.learnforcause@gmail.com"];
+    const recipients = [req.body.email, "debidatta.learnforcause@gmail.com", "ddiallo@itecintegrator.com"];
     sendMail(
       recipients,
       req.body.fname + " " + req.body.lname + " - " + "Contact Response",
