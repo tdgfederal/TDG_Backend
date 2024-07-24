@@ -3,9 +3,9 @@ exports.htmlMail = (
   lname,
   phone,
   email,
-  dob,
-  time,
-  mode,
+  // dob,
+  // time,
+  // mode,
   reason,
   question,
   hear,
@@ -33,21 +33,6 @@ exports.htmlMail = (
       <span style="font-weight:700; color:orange;">
         Email:
         <span style="font-weight:500; color:white;">${email}</span>
-      </span>
-      <br />
-      <span style="font-weight:700; color:orange;">
-        DOB:
-        <span style="font-weight:500; color:white;">${dob}</span>
-      </span>
-      <br />
-      <span style="font-weight:700; color:orange;">
-        Time:
-        <span style="font-weight:500; color:white;">${time}</span>
-      </span>
-      <br />
-      <span style="font-weight:700; color:orange;">
-        Mode:
-        <span style="font-weight:500; color:white;">${mode}</span>
       </span>
       <br />
       <span style="font-weight:700; color:orange;">

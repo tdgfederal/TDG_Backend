@@ -18,18 +18,18 @@ const blogSchema = new Schema({
         type: String,
         required: true,
     },
-    dob: {
-        type: Date,
-        required: true,
-    },
-    time: {
-        type: String,
-        required: true,
-    },
-    mode: {
-        type: String,
-        required: true,
-    },
+    // dob: {
+    //     type: Date,
+    //     required: true,
+    // },
+    // time: {
+    //     type: String,
+    //     required: true,
+    // },
+    // mode: {
+    //     type: String,
+    //     required: true,
+    // },
     reason: {
         type: String,
         required: true,
