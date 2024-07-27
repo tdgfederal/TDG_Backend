@@ -32,6 +32,7 @@ app.use('/api', require("./Routes/CreateBlog"));
 app.use('/api', require("./Routes/Consultation"));
 app.use('/api', require("./Routes/Contact"));
 app.use('/api', require("./Routes/Login"));
+app.use('/api', require("./Routes/Subscribe"));
 
 app.listen(port, () => {
   console.log(`Listening to port ${port}...`);
