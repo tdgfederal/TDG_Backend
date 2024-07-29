@@ -16,6 +16,7 @@ router.post("/consult", async (req, res) => {
       // mode: req.body.mode,
       reason: req.body.reason,
       question: req.body.question,
+      service: req.body.service,
       hear: req.body.hear,
       comment: req.body.comment,
     });
@@ -34,6 +35,7 @@ router.post("/consult", async (req, res) => {
         // req.body.mode,
         req.body.reason,
         req.body.question,
+        req.body.service,
         req.body.hear,
         req.body.comment
       )

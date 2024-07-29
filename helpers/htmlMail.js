@@ -8,6 +8,7 @@ exports.htmlMail = (
   // mode,
   reason,
   question,
+  service,
   hear,
   comment
 ) => {
@@ -46,6 +47,13 @@ exports.htmlMail = (
         Specific Questions or Topics:
         <span style="font-weight:500; color:white;">
           ${question}
+        </span>
+      </span>
+      <br />
+      <span style="font-weight:700; color:orange;">
+        Service:
+        <span style="font-weight:500; color:white;">
+          ${service}
         </span>
       </span>
       <br />
