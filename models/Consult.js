@@ -38,10 +38,10 @@ const blogSchema = new Schema({
         type: String,
         required: true,
     },
-    service: {
-        type: String,
-        required: true,
-    },
+    // service: {
+    //     type: String,
+    //     required: true,
+    // },
     hear: {
         type: String,
         required: true,
