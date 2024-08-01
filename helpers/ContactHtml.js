@@ -2,6 +2,7 @@ exports.ContactHtml = (
     fname,
     lname,
     email,
+    telephone,
     comment
   ) => {
     return `     <div
@@ -20,6 +21,11 @@ exports.ContactHtml = (
         <br />
         <span style="font-weight:700; color:orange;">
           Email:
+          <span style="font-weight:500; color:white;">${email}</span>
+        </span>
+        <br />
+        <span style="font-weight:700; color:orange;">
+          Telephone:
           <span style="font-weight:500; color:white;">${email}</span>
         </span>
         <br />
